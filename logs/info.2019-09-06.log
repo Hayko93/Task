@@ -1,0 +1,755 @@
+2019-09-06 00:04:03.768 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 5392 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:04:03.828 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:04:04.487 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:04:04.488 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:04:19.052 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:04:19.474 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 333ms. Found 2 repository interfaces.
+2019-09-06 00:04:21.139 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4cc3dcb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:04:23.743 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:04:23.834 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:04:23.904 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:04:23.906 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:04:24.205 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:04:24.206 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 19718 ms
+2019-09-06 00:04:24.901 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:04:26.749 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:04:27.056 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.108s)
+2019-09-06 00:04:27.088 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:04:27.090 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:04:28.569 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:04:28.689 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:04:29.046 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:04:29.428 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:04:29.430 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:04:30.015 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:04:30.778 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:04:33.388 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:04:33.462 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:04:36.809 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:04:36.809 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:04:36.809 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:04:36.809 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:04:36.872 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54cbaa33, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dc5bb00, org.springframework.security.web.header.HeaderWriterFilter@9f70bd0, org.springframework.security.web.authentication.logout.LogoutFilter@2ef8e81a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41c1109a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d967535, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2840309f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ffb9910, org.springframework.security.web.session.SessionManagementFilter@5791fd19, org.springframework.security.web.access.ExceptionTranslationFilter@77803f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@194bbc45]
+2019-09-06 00:04:37.607 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:04:38.095 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:04:39.251 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:04:39.333 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:04:39.342 INFO  am.example.task.TaskApplication - Started TaskApplication in 42.925 seconds (JVM running for 120.029)
+2019-09-06 00:05:05.534 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:05:05.535 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:05:05.552 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2019-09-06 00:06:44.582 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:06:44.587 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:06:44.640 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-06 00:06:44.672 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-06 00:19:44.884 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3964 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:19:44.911 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:19:45.239 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:19:45.239 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:19:49.085 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:19:49.406 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 246ms. Found 2 repository interfaces.
+2019-09-06 00:19:50.512 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f64c27fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:19:51.703 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:19:51.778 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:19:51.801 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:19:51.802 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:19:52.322 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:19:52.322 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7082 ms
+2019-09-06 00:19:52.799 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:19:53.681 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:19:53.824 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.045s)
+2019-09-06 00:19:53.841 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:19:53.842 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:19:54.149 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:19:54.202 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:19:54.549 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:19:55.202 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:19:55.205 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:19:55.805 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:19:56.444 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:19:58.505 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:19:58.559 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:20:00.121 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:20:00.121 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:20:00.122 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:20:00.122 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:20:00.223 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e3e6339, org.springframework.security.web.context.SecurityContextPersistenceFilter@37795a5b, org.springframework.security.web.header.HeaderWriterFilter@7ce6f47a, org.springframework.security.web.authentication.logout.LogoutFilter@104bc354, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f38be8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31953640, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46a0a4d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@542870ac, org.springframework.security.web.session.SessionManagementFilter@6becb9c0, org.springframework.security.web.access.ExceptionTranslationFilter@428a296a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a46e4eb]
+2019-09-06 00:20:00.611 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:20:00.684 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:20:01.556 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:20:01.590 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:20:01.594 INFO  am.example.task.TaskApplication - Started TaskApplication in 20.547 seconds (JVM running for 34.39)
+2019-09-06 00:20:09.430 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:20:09.433 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:20:09.457 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2019-09-06 00:21:41.865 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 976 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:21:41.869 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:21:41.943 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:21:41.943 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:21:43.737 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:21:43.901 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149ms. Found 2 repository interfaces.
+2019-09-06 00:21:44.654 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68da7d44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:21:49.649 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:21:49.816 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:21:49.893 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:21:49.894 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:21:52.087 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:21:52.088 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10144 ms
+2019-09-06 00:21:52.353 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:21:52.946 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:21:53.074 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.051s)
+2019-09-06 00:21:53.094 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:21:53.096 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:21:53.276 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:21:53.326 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:21:53.646 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:21:53.823 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:21:53.825 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:21:55.307 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:21:55.718 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:21:57.384 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:21:57.432 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:21:58.515 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:21:58.515 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:21:58.515 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:21:58.515 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:21:58.587 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1db236d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@36aba0a0, org.springframework.security.web.header.HeaderWriterFilter@4ece5207, org.springframework.security.web.authentication.logout.LogoutFilter@54f4c268, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1229e4cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4483d28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75955ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40e0a621, org.springframework.security.web.session.SessionManagementFilter@48be93c2, org.springframework.security.web.access.ExceptionTranslationFilter@6806cca6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6082ad71]
+2019-09-06 00:21:58.868 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:21:58.937 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:21:59.805 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:21:59.839 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:21:59.842 INFO  am.example.task.TaskApplication - Started TaskApplication in 18.467 seconds (JVM running for 20.239)
+2019-09-06 00:22:07.927 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:22:07.928 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:22:08.087 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 159 ms
+2019-09-06 00:25:36.454 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4504 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:25:36.483 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:25:41.449 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:25:41.450 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:25:50.010 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:25:50.422 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 337ms. Found 2 repository interfaces.
+2019-09-06 00:25:52.464 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebb07e3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:25:54.201 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:25:54.261 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:25:54.341 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:25:54.342 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:25:54.863 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:25:54.864 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 13414 ms
+2019-09-06 00:25:55.383 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:25:57.052 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:25:57.253 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.048s)
+2019-09-06 00:25:57.272 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:25:57.273 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:25:57.630 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:25:57.686 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:25:57.955 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:25:58.221 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:25:58.223 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:25:58.845 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:25:59.589 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:26:02.154 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:26:02.224 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:26:03.591 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:26:03.592 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:26:03.592 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:26:03.592 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:26:03.655 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@139066d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b22a04a, org.springframework.security.web.header.HeaderWriterFilter@6b8d743e, org.springframework.security.web.authentication.logout.LogoutFilter@4ebaa15, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26125c0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56eba890, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cab115a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27d6aa87, org.springframework.security.web.session.SessionManagementFilter@7f45686b, org.springframework.security.web.access.ExceptionTranslationFilter@1e9ed1cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60920209]
+2019-09-06 00:26:04.186 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:26:04.287 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:26:05.159 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:26:05.245 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:26:05.251 INFO  am.example.task.TaskApplication - Started TaskApplication in 31.82 seconds (JVM running for 41.502)
+2019-09-06 00:26:34.541 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:26:34.543 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:26:34.576 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+2019-09-06 00:27:51.364 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 1236 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:27:51.367 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:27:51.438 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:27:51.439 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:27:52.842 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:27:52.972 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108ms. Found 2 repository interfaces.
+2019-09-06 00:27:54.233 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a916e0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:27:54.804 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:27:54.828 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:27:54.845 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:27:54.845 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:27:55.061 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:27:55.062 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3622 ms
+2019-09-06 00:27:55.287 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:27:55.850 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:27:55.928 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.030s)
+2019-09-06 00:27:55.944 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:27:55.945 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:27:56.013 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:27:56.036 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:27:56.090 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:27:56.185 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:27:56.189 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:27:56.355 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:27:56.524 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:27:58.720 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:27:58.791 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:27:59.497 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:27:59.497 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:27:59.497 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:27:59.497 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:27:59.531 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59bc6cad, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a3a23c2, org.springframework.security.web.header.HeaderWriterFilter@4d967566, org.springframework.security.web.authentication.logout.LogoutFilter@2c253c95, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b6fd936, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28cf4558, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b62d28c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c0fa8c5, org.springframework.security.web.session.SessionManagementFilter@2c5b5f4, org.springframework.security.web.access.ExceptionTranslationFilter@307f0c4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@518b3c58]
+2019-09-06 00:27:59.717 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:27:59.762 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:28:00.358 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:28:00.403 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:28:00.405 INFO  am.example.task.TaskApplication - Started TaskApplication in 9.515 seconds (JVM running for 10.9)
+2019-09-06 00:28:17.995 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:28:17.996 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:28:18.067 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 71 ms
+2019-09-06 00:29:03.938 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4408 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:29:03.942 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:29:03.997 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:29:03.997 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:29:04.952 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:29:05.042 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81ms. Found 2 repository interfaces.
+2019-09-06 00:29:05.513 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$582f500] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:29:05.922 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:29:05.936 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:29:05.946 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:29:05.947 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:29:06.101 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:29:06.102 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2105 ms
+2019-09-06 00:29:06.278 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:29:06.760 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:29:06.844 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.028s)
+2019-09-06 00:29:06.861 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:29:06.863 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:29:06.931 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:29:06.954 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:29:07.008 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:29:07.093 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:29:07.095 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:29:07.261 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:29:07.420 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:29:08.414 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:29:08.459 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:29:09.095 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:29:09.095 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:29:09.095 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:29:09.095 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:29:09.128 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@583aded4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2451d520, org.springframework.security.web.header.HeaderWriterFilter@d2d73cf, org.springframework.security.web.authentication.logout.LogoutFilter@38ff2aae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@310c3b6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@138409e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aff8163, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@83d69d2, org.springframework.security.web.session.SessionManagementFilter@4c6f23b7, org.springframework.security.web.access.ExceptionTranslationFilter@5f12d5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@299e3ba5]
+2019-09-06 00:29:09.291 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:29:09.337 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:29:09.920 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:29:10.013 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:29:10.020 INFO  am.example.task.TaskApplication - Started TaskApplication in 6.818 seconds (JVM running for 8.92)
+2019-09-06 00:29:19.618 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:29:19.619 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:29:19.670 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 51 ms
+2019-09-06 00:33:09.061 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3020 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 00:33:09.081 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 00:33:09.364 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 00:33:09.365 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 00:33:12.576 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 00:33:12.784 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148ms. Found 2 repository interfaces.
+2019-09-06 00:33:13.730 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe01dc30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 00:33:14.475 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 00:33:14.541 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:33:14.564 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 00:33:14.565 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 00:33:14.848 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 00:33:14.848 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5482 ms
+2019-09-06 00:33:15.321 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 00:33:20.148 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 00:33:20.364 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.046s)
+2019-09-06 00:33:20.381 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 00:33:20.382 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 00:33:20.718 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 00:33:20.749 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 00:33:21.043 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 00:33:21.326 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 00:33:21.329 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 00:33:21.888 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 00:33:22.487 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 00:33:24.698 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 00:33:24.752 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 00:33:25.844 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 00:33:25.844 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 00:33:25.844 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 00:33:25.844 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 00:33:25.889 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18708892, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d5edc25, org.springframework.security.web.header.HeaderWriterFilter@3f8d4ca3, org.springframework.security.web.authentication.logout.LogoutFilter@5cc5f4da, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3fe52631, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b049b33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@110cb8a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eb2f103, org.springframework.security.web.session.SessionManagementFilter@598678ba, org.springframework.security.web.access.ExceptionTranslationFilter@363568ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@be3c3ff]
+2019-09-06 00:33:26.169 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 00:33:26.233 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 00:33:26.996 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 00:33:27.033 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 00:33:27.037 INFO  am.example.task.TaskApplication - Started TaskApplication in 19.543 seconds (JVM running for 24.676)
+2019-09-06 00:33:36.650 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 00:33:36.651 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 00:33:36.669 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2019-09-06 00:33:40.017 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-06 00:35:53.408 WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+2019-09-06 00:35:53.647 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-09-06 15:03:50.069 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3612 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 15:03:50.103 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 15:03:50.683 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 15:03:50.683 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 15:04:00.391 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 15:04:00.580 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126ms. Found 4 repository interfaces.
+2019-09-06 15:04:01.518 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad043fa1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 15:04:02.380 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 15:04:02.479 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:04:02.518 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 15:04:02.520 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 15:04:02.778 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 15:04:02.778 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12094 ms
+2019-09-06 15:04:05.439 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 15:04:07.256 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 15:04:07.507 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 2
+-> Applied to database : 620245502
+-> Resolved locally    : -1388279399
+2019-09-06 15:04:07.512 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-06 15:04:07.529 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-06 15:04:07.594 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 2
+-> Applied to database : 620245502
+-> Resolved locally    : -1388279399
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 2
+-> Applied to database : 620245502
+-> Resolved locally    : -1388279399
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-06 15:09:54.215 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3876 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 15:09:54.237 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 15:09:54.415 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 15:09:54.415 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 15:09:58.318 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 15:09:58.541 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 161ms. Found 4 repository interfaces.
+2019-09-06 15:09:59.402 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75ac45db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 15:10:00.825 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 15:10:00.878 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:10:00.921 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 15:10:00.921 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 15:10:02.375 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 15:10:02.383 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7968 ms
+2019-09-06 15:10:06.462 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 15:10:08.325 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 15:10:08.583 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.101s)
+2019-09-06 15:10:08.690 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-06 15:10:10.333 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-06 15:10:10.336 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-06 15:10:14.786 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-06 15:10:14.914 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `task_test` (execution time 00:06.230s)
+2019-09-06 15:10:15.340 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 15:10:15.421 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 15:10:16.143 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 15:10:17.274 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 15:10:17.275 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 15:10:17.779 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 15:10:18.424 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 15:10:26.447 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 15:10:26.550 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 15:10:32.197 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 15:10:32.197 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 15:10:32.197 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 15:10:32.197 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 15:10:32.264 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@766a4591, org.springframework.security.web.context.SecurityContextPersistenceFilter@61619c49, org.springframework.security.web.header.HeaderWriterFilter@76987120, org.springframework.security.web.authentication.logout.LogoutFilter@64e95a75, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@781b1089, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@723c400d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c7491a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56d59c8d, org.springframework.security.web.session.SessionManagementFilter@26c181ff, org.springframework.security.web.access.ExceptionTranslationFilter@22f3851f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5105bd8b]
+2019-09-06 15:10:32.610 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 15:10:32.673 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 15:10:33.407 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:10:33.647 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 15:10:33.672 INFO  am.example.task.TaskApplication - Started TaskApplication in 40.714 seconds (JVM running for 50.994)
+2019-09-06 15:11:16.417 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 15:11:16.417 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 15:11:17.343 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 926 ms
+2019-09-06 15:12:06.964 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-06 15:13:46.706 ERROR o.s.s.w.a.UsernamePasswordAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: PreparedStatementCallback; bad SQL grammar [select  email, password, active from users where email=?]; nested exception is java.sql.SQLSyntaxErrorException: Table 'task_test.users' doesn't exist
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [select  email, password, active from users where email=?]; nested exception is java.sql.SQLSyntaxErrorException: Table 'task_test.users' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1442)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:632)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:668)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:699)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:711)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:762)
+	at org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl.loadUsersByUsername(JdbcDaoImpl.java:227)
+	at org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl.loadUserByUsername(JdbcDaoImpl.java:184)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 54 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'task_test.users' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:616)
+	... 61 common frames omitted
+2019-09-06 15:21:57.306 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 2832 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 15:21:57.319 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 15:21:57.489 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 15:21:57.490 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 15:22:02.626 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 15:22:02.778 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115ms. Found 4 repository interfaces.
+2019-09-06 15:22:03.676 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de45ec85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 15:22:04.525 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 15:22:04.600 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:22:04.614 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 15:22:04.615 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 15:22:04.780 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 15:22:04.781 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7291 ms
+2019-09-06 15:22:05.191 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 15:22:05.925 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 15:22:06.084 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.045s)
+2019-09-06 15:22:06.101 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 15:22:06.102 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 15:22:06.319 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 15:22:06.356 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 15:22:06.576 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 15:22:06.800 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 15:22:06.802 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 15:22:07.320 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 15:22:07.944 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 15:22:09.711 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 15:22:09.773 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 15:22:10.866 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 15:22:10.866 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 15:22:10.866 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 15:22:10.866 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 15:22:10.912 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34f72747, org.springframework.security.web.context.SecurityContextPersistenceFilter@6600ba4e, org.springframework.security.web.header.HeaderWriterFilter@144a65a4, org.springframework.security.web.authentication.logout.LogoutFilter@64476c1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50005d78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f7caeb4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7392536e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@664e473c, org.springframework.security.web.session.SessionManagementFilter@ddeb183, org.springframework.security.web.access.ExceptionTranslationFilter@4810b2b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bd60b6c]
+2019-09-06 15:22:11.226 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 15:22:11.294 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 15:22:12.064 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:22:12.133 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 15:22:12.136 INFO  am.example.task.TaskApplication - Started TaskApplication in 15.903 seconds (JVM running for 23.643)
+2019-09-06 15:22:23.653 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 15:22:23.654 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 15:22:23.663 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-09-06 15:52:37.357 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3412 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 15:52:37.366 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 15:52:37.513 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 15:52:37.514 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 15:52:40.662 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 15:52:40.845 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121ms. Found 4 repository interfaces.
+2019-09-06 15:52:41.659 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$33d7db2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 15:52:42.498 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 15:52:42.862 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:52:42.897 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 15:52:42.897 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 15:52:43.248 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 15:52:43.249 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5735 ms
+2019-09-06 15:52:43.536 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 15:52:45.215 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 15:52:46.551 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.282s)
+2019-09-06 15:52:46.624 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 15:52:46.625 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 15:52:48.464 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 15:52:48.524 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 15:52:52.906 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 15:52:55.512 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 15:52:55.514 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 15:52:56.152 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 15:52:56.775 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 15:52:58.343 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 15:52:58.395 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 15:52:59.673 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 15:52:59.673 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 15:52:59.673 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 15:52:59.673 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 15:52:59.732 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e2ac577, org.springframework.security.web.context.SecurityContextPersistenceFilter@4de1e349, org.springframework.security.web.header.HeaderWriterFilter@3925ef31, org.springframework.security.web.authentication.logout.LogoutFilter@1905ff86, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1482bb1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e411d4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@372b4e21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f71f1c3, org.springframework.security.web.session.SessionManagementFilter@295065a9, org.springframework.security.web.access.ExceptionTranslationFilter@1b70f934, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@371c261]
+2019-09-06 15:53:00.078 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 15:53:00.147 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 15:53:00.817 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:53:00.879 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 15:53:00.881 INFO  am.example.task.TaskApplication - Started TaskApplication in 24.646 seconds (JVM running for 35.344)
+2019-09-06 15:53:17.556 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 15:53:17.556 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 15:53:17.566 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-09-06 15:55:09.712 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 6112 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 15:55:09.715 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 15:55:09.780 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 15:55:09.780 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 15:55:11.141 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 15:55:11.240 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90ms. Found 4 repository interfaces.
+2019-09-06 15:55:11.684 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c58fe839] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 15:55:12.151 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 15:55:12.178 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:55:12.199 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 15:55:12.200 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 15:55:12.373 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 15:55:12.374 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2593 ms
+2019-09-06 15:55:12.534 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 15:55:13.129 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 15:55:13.220 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.044s)
+2019-09-06 15:55:13.236 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 15:55:13.237 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 15:55:13.304 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 15:55:13.329 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 15:55:13.386 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 15:55:13.471 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 15:55:13.474 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 15:55:13.635 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 15:55:13.780 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 15:55:14.616 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 15:55:14.657 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 15:55:15.303 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 15:55:15.303 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 15:55:15.303 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 15:55:15.303 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 15:55:15.334 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34d65060, org.springframework.security.web.context.SecurityContextPersistenceFilter@61570ca2, org.springframework.security.web.header.HeaderWriterFilter@5241363d, org.springframework.security.web.authentication.logout.LogoutFilter@51695e49, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69705900, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a3b06c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4322a21b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f05a7a3, org.springframework.security.web.session.SessionManagementFilter@778df1fe, org.springframework.security.web.access.ExceptionTranslationFilter@914acc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d65f4e8]
+2019-09-06 15:55:15.494 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 15:55:15.542 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 15:55:16.139 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 15:55:16.162 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 15:55:16.165 INFO  am.example.task.TaskApplication - Started TaskApplication in 6.861 seconds (JVM running for 8.836)
+2019-09-06 15:55:22.959 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 15:55:22.959 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 15:55:22.971 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-09-06 16:07:02.033 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 1956 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 16:07:02.057 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 16:07:02.187 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 16:07:02.187 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 16:07:04.751 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 16:07:04.920 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106ms. Found 4 repository interfaces.
+2019-09-06 16:07:05.891 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6aef0a04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 16:07:06.574 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 16:07:06.604 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:07:06.615 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 16:07:06.616 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 16:07:06.761 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 16:07:06.761 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4574 ms
+2019-09-06 16:07:07.086 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 16:07:07.963 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 16:07:08.108 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.039s)
+2019-09-06 16:07:08.123 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 16:07:08.124 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 16:07:08.387 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 16:07:08.436 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 16:07:08.818 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 16:07:09.128 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 16:07:09.130 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 16:07:09.740 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 16:07:10.181 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 16:07:16.488 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 16:07:16.539 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 16:07:18.007 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 16:07:18.007 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 16:07:18.007 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 16:07:18.007 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 16:07:18.066 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38b8775, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a130153, org.springframework.security.web.header.HeaderWriterFilter@63cb3c07, org.springframework.security.web.authentication.logout.LogoutFilter@7c89e57b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e2f16c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@775376d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d0e5d03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65846ff9, org.springframework.security.web.session.SessionManagementFilter@37ff9804, org.springframework.security.web.access.ExceptionTranslationFilter@12a5e882, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60160c6f]
+2019-09-06 16:07:18.617 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 16:07:18.741 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 16:07:19.516 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:07:19.602 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 16:07:19.606 INFO  am.example.task.TaskApplication - Started TaskApplication in 18.696 seconds (JVM running for 30.539)
+2019-09-06 16:07:32.955 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 16:07:32.955 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 16:07:32.963 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-09-06 16:13:26.739 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 1280 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 16:13:26.764 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 16:13:27.069 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 16:13:27.069 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 16:13:44.678 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 16:13:50.446 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5056ms. Found 4 repository interfaces.
+2019-09-06 16:13:51.520 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$187098a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 16:13:52.467 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 16:13:52.530 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:13:52.544 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 16:13:52.545 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 16:13:52.715 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 16:13:52.715 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 25645 ms
+2019-09-06 16:13:53.178 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 16:13:53.967 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 16:13:54.148 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.050s)
+2019-09-06 16:13:54.165 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 16:13:54.166 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 16:13:54.368 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 16:13:54.396 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 16:13:54.593 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 16:13:54.842 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 16:13:54.845 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 16:13:55.368 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 16:13:55.896 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 16:13:57.830 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 16:13:57.889 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 16:14:20.604 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 16:14:20.605 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 16:14:20.605 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 16:14:20.605 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 16:14:21.138 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9071376, org.springframework.security.web.context.SecurityContextPersistenceFilter@97b7641, org.springframework.security.web.header.HeaderWriterFilter@50f0c836, org.springframework.security.web.authentication.logout.LogoutFilter@35ff1378, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c5b1bce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@206185e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@816f560, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d96fcf3, org.springframework.security.web.session.SessionManagementFilter@8f2bb03, org.springframework.security.web.access.ExceptionTranslationFilter@cd4373a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bcf3f86]
+2019-09-06 16:14:22.347 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 16:14:22.756 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 16:14:24.659 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:14:25.144 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 16:14:25.149 INFO  am.example.task.TaskApplication - Started TaskApplication in 60.573 seconds (JVM running for 83.097)
+2019-09-06 16:14:35.388 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 16:14:35.391 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 16:14:35.423 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+2019-09-06 16:15:37.397 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-06 16:15:37.403 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 16:15:37.486 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-06 16:15:37.508 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-06 16:16:23.967 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3336 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-06 16:16:23.971 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-06 16:16:24.041 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-06 16:16:24.041 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-06 16:16:26.692 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-06 16:16:26.882 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 175ms. Found 4 repository interfaces.
+2019-09-06 16:16:27.556 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a7587f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 16:16:29.147 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-06 16:16:29.269 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:16:29.300 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 16:16:29.301 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 16:16:29.988 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 16:16:29.988 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5947 ms
+2019-09-06 16:16:30.918 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-06 16:16:35.592 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-06 16:16:36.214 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.138s)
+2019-09-06 16:16:36.242 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-06 16:16:36.243 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-06 16:16:37.097 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-06 16:16:37.372 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-06 16:16:38.417 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-06 16:16:40.212 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-06 16:16:40.219 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-06 16:16:44.474 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-06 16:16:48.055 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-06 16:16:53.988 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 16:16:54.140 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-06 16:16:56.861 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-06 16:16:56.861 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-06 16:16:56.861 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-06 16:16:56.861 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-06 16:16:56.927 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e84a4e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@69b84c59, org.springframework.security.web.header.HeaderWriterFilter@63329669, org.springframework.security.web.authentication.logout.LogoutFilter@341a72c6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15bd5d8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7876bba3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6226adb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e03dd9c, org.springframework.security.web.session.SessionManagementFilter@16b9b5dd, org.springframework.security.web.access.ExceptionTranslationFilter@33632bcd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71a0da17]
+2019-09-06 16:16:57.628 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 16:16:57.690 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-06 16:16:58.790 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-06 16:17:01.908 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-06 16:17:01.933 INFO  am.example.task.TaskApplication - Started TaskApplication in 38.558 seconds (JVM running for 43.052)
+2019-09-06 16:17:14.031 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 16:17:14.032 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 16:17:14.142 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 110 ms
+2019-09-06 16:18:47.574 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s96ms940µs744ns).
+2019-09-06 16:19:36.457 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s884ms214µs739ns).
+2019-09-06 16:25:57.804 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m50s286ms424µs250ns).
+2019-09-06 16:26:38.411 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s193ms361µs461ns).
+2019-09-06 16:29:56.639 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-06 16:29:57.885 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-06 16:30:09.746 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-06 16:30:11.279 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

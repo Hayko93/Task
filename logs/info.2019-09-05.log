@@ -1,0 +1,1487 @@
+2019-09-05 21:29:30.260 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3600 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 21:29:30.302 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 21:29:31.015 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 21:29:31.016 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 21:29:42.000 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 21:29:42.996 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 687ms. Found 2 repository interfaces.
+2019-09-05 21:29:44.566 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23cc1b8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 21:29:45.340 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 21:29:45.446 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 21:29:45.467 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 21:29:45.467 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 21:29:45.714 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 21:29:45.715 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 14698 ms
+2019-09-05 21:29:45.968 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 21:29:51.786 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 21:29:52.137 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1615383544
+2019-09-05 21:29:52.142 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 21:29:52.168 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 21:29:52.235 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1615383544
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1615383544
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 21:44:37.941 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 6064 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 21:44:37.964 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 21:44:38.141 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 21:44:38.141 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 21:44:57.199 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 21:44:57.443 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 197ms. Found 2 repository interfaces.
+2019-09-05 21:44:58.349 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f48beea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 21:44:59.574 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 21:44:59.627 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 21:44:59.670 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 21:44:59.671 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 21:44:59.915 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 21:44:59.915 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 21773 ms
+2019-09-05 21:45:00.380 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 21:45:01.539 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 21:45:01.745 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+2019-09-05 21:45:01.748 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 21:45:01.762 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 21:45:01.832 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 21:46:28.531 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 5184 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 21:46:28.547 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 21:46:28.649 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 21:46:28.649 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 21:46:29.990 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 21:46:30.085 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 2 repository interfaces.
+2019-09-05 21:46:30.524 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8abc8788] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 21:46:30.903 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 21:46:30.918 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 21:46:30.928 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 21:46:30.928 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 21:46:31.151 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 21:46:31.151 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2502 ms
+2019-09-05 21:46:31.310 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 21:46:31.773 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 21:46:31.940 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+2019-09-05 21:46:31.944 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 21:46:31.958 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 21:46:31.968 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 21:47:31.196 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 5096 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 21:47:31.218 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 21:47:31.329 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 21:47:31.330 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 21:47:32.695 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 21:47:32.799 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93ms. Found 2 repository interfaces.
+2019-09-05 21:47:33.384 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7fc7fffb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 21:47:33.757 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 21:47:33.772 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 21:47:33.781 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 21:47:33.782 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 21:47:33.985 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 21:47:33.985 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2655 ms
+2019-09-05 21:47:34.141 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 21:47:34.583 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 21:47:34.687 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+2019-09-05 21:47:34.690 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 21:47:34.704 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 21:47:34.713 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Migration checksum mismatch for migration version 1
+-> Applied to database : -549190353
+-> Resolved locally    : 1812562775
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 21:50:43.551 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4740 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 21:50:43.620 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 21:50:43.903 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 21:50:43.904 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 21:50:46.976 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 21:50:47.222 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 189ms. Found 2 repository interfaces.
+2019-09-05 21:50:48.100 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d9cb113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 21:50:49.197 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 21:50:49.251 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 21:50:49.293 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 21:50:49.294 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 21:50:49.517 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 21:50:49.518 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5614 ms
+2019-09-05 21:50:49.861 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 21:50:50.895 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 21:50:51.077 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.049s)
+2019-09-05 21:50:51.412 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-05 21:50:53.268 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-05 21:50:53.273 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-05 21:50:58.126 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-05 21:50:58.327 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `task_test` (execution time 00:06.919s)
+2019-09-05 21:50:58.682 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 21:50:58.780 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 21:50:59.199 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 21:50:59.429 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 21:50:59.430 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 21:51:00.503 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 21:51:01.139 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 21:51:07.885 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists roles" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists roles" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLException: Cannot drop table 'roles' referenced by a foreign key constraint 'role_id_foreign_key' on table 'user_role'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2019-09-05 21:51:09.186 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists users" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists users" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLException: Cannot drop table 'users' referenced by a foreign key constraint 'owner_user_id' on table 'board'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2019-09-05 21:51:09.756 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table roles (id integer not null auto_increment, role varchar(255), primary key (id)) engine=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table roles (id integer not null auto_increment, role varchar(255), primary key (id)) engine=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:424)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:315)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'roles' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2019-09-05 21:51:10.046 WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table users (id integer not null auto_increment, active integer, active_code varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), primary key (id)) engine=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table users (id integer not null auto_increment, active integer, active_code varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), primary key (id)) engine=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:424)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:315)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'users' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 39 common frames omitted
+2019-09-05 21:51:15.918 INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@64c02a51'
+2019-09-05 21:51:15.941 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 21:51:16.058 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 21:51:16.063 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+2019-09-05 21:51:16.064 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 21:51:16.070 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 21:51:16.084 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 21:51:16.086 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 21:51:16.101 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 21:51:16.138 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 22 common frames omitted
+2019-09-05 22:02:20.427 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4924 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:02:20.449 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:02:20.638 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:02:20.638 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:02:24.097 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:02:24.286 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144ms. Found 2 repository interfaces.
+2019-09-05 22:02:25.283 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$922d85f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:02:26.473 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:02:26.538 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:02:26.602 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:02:26.602 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:02:26.826 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:02:26.826 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6188 ms
+2019-09-05 22:02:27.302 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:02:38.426 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:02:41.335 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.988s)
+2019-09-05 22:02:41.983 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-05 22:02:44.420 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-05 22:02:44.426 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-05 22:02:48.337 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-05 22:02:48.455 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `task_test` (execution time 00:06.478s)
+2019-09-05 22:02:48.780 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:02:48.876 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:02:49.106 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:02:49.462 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:02:49.463 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:02:49.875 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:02:50.791 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:02:52.568 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [board_members]
+2019-09-05 22:02:52.569 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:02:52.577 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:02:52.579 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:02:52.595 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:02:52.655 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [board_members]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [board_members]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [board_members]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:191)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 25 common frames omitted
+2019-09-05 22:09:31.226 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 3296 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:09:31.252 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:09:31.569 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:09:31.570 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:09:34.808 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:09:34.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116ms. Found 2 repository interfaces.
+2019-09-05 22:09:35.771 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9463a0c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:09:36.519 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:09:36.550 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:09:36.564 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:09:36.565 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:09:36.762 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:09:36.763 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5193 ms
+2019-09-05 22:09:37.016 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:09:38.096 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:09:38.222 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.039s)
+2019-09-05 22:09:38.345 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-05 22:09:39.282 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-05 22:09:39.285 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-05 22:09:44.114 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-05 22:09:44.154 WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Table 'task_test.roles' doesn't exist (SQL State: 42S02 - Error Code: 1146)
+2019-09-05 22:09:44.187 ERROR o.f.core.internal.command.DbMigrate - Migration of schema `task_test` to version 2 - Create table failed! Please restore backups and roll back database and code!
+2019-09-05 22:09:44.470 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__Create_table.sql failed
+-------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'task_test.roles' doesn't exist
+Location   : db/migration/V2__Create_table.sql (C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\db\migration\V2__Create_table.sql)
+Line       : 1
+Statement  : INSERT INTO roles(id, role)
+VALUES (1, 'ADMIN')
+
+2019-09-05 22:09:44.479 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:09:44.520 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:09:44.743 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__Create_table.sql failed
+-------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'task_test.roles' doesn't exist
+Location   : db/migration/V2__Create_table.sql (C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\db\migration\V2__Create_table.sql)
+Line       : 1
+Statement  : INSERT INTO roles(id, role)
+VALUES (1, 'ADMIN')
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__Create_table.sql failed
+-------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'task_test.roles' doesn't exist
+Location   : db/migration/V2__Create_table.sql (C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\db\migration\V2__Create_table.sql)
+Line       : 1
+Statement  : INSERT INTO roles(id, role)
+VALUES (1, 'ADMIN')
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:370)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:54)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:284)
+	at org.flywaydb.core.internal.jdbc.TransactionTemplate.execute(TransactionTemplate.java:74)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:281)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:54)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:161)
+	at org.flywaydb.core.internal.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:60)
+	at org.flywaydb.core.internal.database.mysql.MySQLConnection.lock(MySQLConnection.java:147)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:155)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:161)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:139)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1395)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V2__Create_table.sql failed
+-------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'task_test.roles' doesn't exist
+Location   : db/migration/V2__Create_table.sql (C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\db\migration\V2__Create_table.sql)
+Line       : 1
+Statement  : INSERT INTO roles(id, role)
+VALUES (1, 'ADMIN')
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:253)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:202)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:125)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:77)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:367)
+	... 43 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'task_test.roles' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:235)
+	at org.flywaydb.core.internal.sqlscript.StandardSqlStatement.execute(StandardSqlStatement.java:42)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:189)
+	... 46 common frames omitted
+2019-09-05 22:10:23.444 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 340 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:10:23.447 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:10:23.557 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:10:23.561 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:10:25.020 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:10:25.106 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 2 repository interfaces.
+2019-09-05 22:10:25.552 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc34c161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:10:25.965 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:10:25.979 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:10:25.988 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:10:25.989 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:10:26.130 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:10:26.131 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2569 ms
+2019-09-05 22:10:26.293 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:10:26.756 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:10:26.935 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+2019-09-05 22:10:26.939 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:10:26.952 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:10:26.967 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 22:10:49.073 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 1664 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:10:49.080 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:10:49.184 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:10:49.186 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:10:50.368 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:10:50.463 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87ms. Found 2 repository interfaces.
+2019-09-05 22:10:50.885 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58bef833] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:10:51.615 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:10:51.632 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:10:51.642 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:10:51.643 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:10:52.049 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:10:52.049 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2862 ms
+2019-09-05 22:10:52.206 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:10:52.679 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:10:52.759 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+2019-09-05 22:10:52.762 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:10:52.775 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:10:52.784 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 2 (Create table)
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482)
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 23 common frames omitted
+2019-09-05 22:11:33.655 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 424 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:11:33.660 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:11:33.736 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:11:33.737 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:11:34.975 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:11:35.059 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 2 repository interfaces.
+2019-09-05 22:11:35.484 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e325db2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:11:35.882 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:11:35.896 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:11:35.905 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:11:35.905 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:11:36.019 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:11:36.020 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2283 ms
+2019-09-05 22:11:36.182 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:11:36.665 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:11:36.738 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.024s)
+2019-09-05 22:11:36.890 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-05 22:11:38.081 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-05 22:11:38.084 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-05 22:11:43.539 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-05 22:11:43.701 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `task_test` (execution time 00:06.819s)
+2019-09-05 22:11:43.965 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:11:43.990 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:11:44.132 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:11:44.512 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:11:44.515 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:11:44.973 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:11:45.748 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:11:48.567 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:11:48.652 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:11:48.676 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\am\example\task\config\SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-09-05 22:11:48.676 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:11:48.681 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:11:48.698 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:11:48.701 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:11:48.713 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:11:49.073 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in am.example.task.config.SecurityConfiguration required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-09-05 22:14:00.923 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 2200 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:14:00.955 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:14:01.218 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:14:01.218 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:14:04.527 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:14:04.771 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 182ms. Found 2 repository interfaces.
+2019-09-05 22:14:05.726 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42e13397] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:14:06.605 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:14:06.658 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:14:06.712 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:14:06.712 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:14:06.906 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:14:06.907 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5687 ms
+2019-09-05 22:14:07.344 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:14:08.525 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:14:08.680 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.056s)
+2019-09-05 22:14:08.695 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:14:08.696 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:14:08.905 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:14:08.937 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:14:09.200 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:14:09.381 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:14:09.382 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:14:09.826 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:14:10.299 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:14:15.581 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [active] in table [user]; found [tinyint (Types#TINYINT)], but expecting [integer (Types#INTEGER)]
+2019-09-05 22:14:15.583 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:14:15.592 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:14:15.595 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:14:15.614 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:14:15.692 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [active] in table [user]; found [tinyint (Types#TINYINT)], but expecting [integer (Types#INTEGER)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [active] in table [user]; found [tinyint (Types#TINYINT)], but expecting [integer (Types#INTEGER)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [active] in table [user]; found [tinyint (Types#TINYINT)], but expecting [integer (Types#INTEGER)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:159)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:143)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:191)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 25 common frames omitted
+2019-09-05 22:16:59.521 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4612 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:16:59.535 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:16:59.633 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:16:59.633 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:17:01.226 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:17:01.405 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 161ms. Found 2 repository interfaces.
+2019-09-05 22:17:02.124 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4215d878] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:17:02.495 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:17:02.510 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:17:02.519 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:17:02.519 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:17:04.390 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:17:04.391 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4758 ms
+2019-09-05 22:17:06.684 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:17:08.434 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:17:08.605 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.067s)
+2019-09-05 22:17:08.628 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:17:08.629 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:17:09.004 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:17:09.133 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:17:09.323 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:17:09.523 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:17:09.525 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:17:10.012 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:17:10.463 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:17:12.098 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:17:12.157 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:17:12.174 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\am\example\task\config\SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-09-05 22:17:12.175 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:17:12.179 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:17:12.189 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:17:12.191 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:17:12.236 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:17:12.518 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in am.example.task.config.SecurityConfiguration required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-09-05 22:17:29.104 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4864 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:17:29.125 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:17:29.209 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:17:29.210 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:17:30.560 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:17:30.696 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126ms. Found 2 repository interfaces.
+2019-09-05 22:17:31.333 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35cffdd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:17:31.769 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:17:31.784 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:17:31.793 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:17:31.793 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:17:31.951 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:17:31.951 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2741 ms
+2019-09-05 22:17:32.120 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:17:32.587 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:17:32.684 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.045s)
+2019-09-05 22:17:32.699 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:17:32.700 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:17:32.766 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:17:32.789 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:17:32.844 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:17:32.928 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:17:32.930 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:17:33.101 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:17:33.242 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:17:34.089 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:17:34.131 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:17:34.146 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\am\example\task\config\SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-09-05 22:17:34.147 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:17:34.151 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:17:34.163 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:17:34.166 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:17:34.180 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:17:34.327 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in am.example.task.config.SecurityConfiguration required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-09-05 22:27:12.438 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 5324 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:27:12.449 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:27:12.599 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:27:12.599 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:27:15.532 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:27:15.714 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117ms. Found 2 repository interfaces.
+2019-09-05 22:27:16.484 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ecc3a7ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:27:28.215 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:27:28.314 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:27:28.346 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:27:28.347 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:27:28.616 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:27:28.617 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 16018 ms
+2019-09-05 22:27:29.278 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:27:30.409 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:27:30.584 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.052s)
+2019-09-05 22:27:30.603 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:27:30.604 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:27:30.869 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:27:30.926 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:27:31.309 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:27:31.511 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:27:31.514 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:27:32.023 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:27:32.687 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:27:42.024 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:27:42.093 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:27:42.144 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\am\example\task\config\SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-09-05 22:27:42.144 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:27:42.175 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:27:42.203 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:27:42.208 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:27:42.259 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:27:42.501 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in am.example.task.config.SecurityConfiguration required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-09-05 22:32:09.845 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4848 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:32:09.873 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:32:10.200 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:32:10.201 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:32:13.725 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:32:13.926 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144ms. Found 2 repository interfaces.
+2019-09-05 22:32:14.730 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a837ee4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:32:15.964 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:32:16.244 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:32:16.354 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:32:16.355 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:32:17.762 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:32:17.771 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7570 ms
+2019-09-05 22:32:19.068 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:32:20.338 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:32:21.065 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.106s)
+2019-09-05 22:32:21.095 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:32:21.096 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:32:21.337 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:32:21.373 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:32:21.618 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:32:22.022 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:32:22.024 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:32:22.511 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:32:22.995 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:32:27.642 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:32:27.770 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:32:27.805 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [C:\Users\Roman Petrosyan\IdeaProjects\task\target\classes\am\example\task\config\SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.access.AccessDeniedHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-09-05 22:32:27.805 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:32:27.810 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:32:27.820 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:32:27.822 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:32:27.836 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:32:28.125 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in am.example.task.config.SecurityConfiguration required a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.access.AccessDeniedHandler' in your configuration.
+
+2019-09-05 22:36:11.381 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 1748 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:36:11.402 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:36:11.800 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:36:11.801 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:36:15.748 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:36:15.922 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111ms. Found 2 repository interfaces.
+2019-09-05 22:36:16.690 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ce73f5b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:36:17.404 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:36:17.468 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:36:17.482 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:36:17.482 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:36:17.676 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:36:17.677 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5876 ms
+2019-09-05 22:36:17.946 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:36:19.347 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:36:19.920 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.091s)
+2019-09-05 22:36:19.936 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:36:19.937 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:36:20.852 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:36:20.900 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:36:21.862 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:36:23.937 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:36:23.941 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:36:28.837 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:36:32.192 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:36:42.528 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:36:42.744 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:36:49.343 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: errorPage must begin with '/'
+2019-09-05 22:36:49.348 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:36:49.359 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-09-05 22:36:49.373 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-09-05 22:36:49.381 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 22:36:49.400 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 22:36:49.498 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: errorPage must begin with '/'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203)
+	at am.example.task.TaskApplication.main(TaskApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: errorPage must begin with '/'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: errorPage must begin with '/'
+	at org.springframework.security.web.access.AccessDeniedHandlerImpl.setErrorPage(AccessDeniedHandlerImpl.java:93)
+	at org.springframework.security.config.annotation.web.configurers.ExceptionHandlingConfigurer.accessDeniedPage(ExceptionHandlingConfigurer.java:94)
+	at am.example.task.config.SecurityConfiguration.configure(SecurityConfiguration.java:68)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:92)
+	at am.example.task.config.SecurityConfiguration$$EnhancerBySpringCGLIB$$5094f284.init(<generated>)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:371)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:325)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$75a522a5.CGLIB$springSecurityFilterChain$2(<generated>)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$75a522a5$$FastClassBySpringCGLIB$$bc3b24b1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$75a522a5.springSecurityFilterChain(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 27 common frames omitted
+2019-09-05 22:37:54.939 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 2400 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:37:54.943 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:37:55.034 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:37:55.035 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:37:56.359 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:37:56.472 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103ms. Found 2 repository interfaces.
+2019-09-05 22:37:57.045 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12d9c4bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:37:57.399 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:37:57.414 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:37:57.423 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:37:57.423 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:37:57.566 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:37:57.566 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2531 ms
+2019-09-05 22:37:57.756 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:37:58.161 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:37:58.234 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.026s)
+2019-09-05 22:37:58.249 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:37:58.250 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:37:58.317 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:37:58.340 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:37:58.391 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:37:58.483 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:37:58.485 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:37:58.655 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:37:58.813 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:37:59.631 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:37:59.673 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:38:00.251 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-05 22:38:00.251 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-05 22:38:00.251 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-05 22:38:00.251 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-05 22:38:01.211 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6153368e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6211d306, org.springframework.security.web.header.HeaderWriterFilter@76aec1cc, org.springframework.security.web.authentication.logout.LogoutFilter@1085fe13, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ac0f39b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f7111ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@482c05cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c324d14, org.springframework.security.web.session.SessionManagementFilter@327e11f3, org.springframework.security.web.access.ExceptionTranslationFilter@2cb19909, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66842e99]
+2019-09-05 22:38:02.696 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 22:38:03.027 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 22:38:09.158 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:38:11.653 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-05 22:38:11.658 INFO  am.example.task.TaskApplication - Started TaskApplication in 17.324 seconds (JVM running for 18.914)
+2019-09-05 22:38:37.552 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 22:38:37.552 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 22:38:37.706 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 154 ms
+2019-09-05 22:39:21.246 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-05 22:39:24.317 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2019-09-05 22:39:24.317 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'name' doesn't have a default value
+2019-09-05 22:39:24.990 ERROR a.e.t.c.e.ExceptionHandler - Global Error : could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2019-09-05 22:39:24.992 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement]
+2019-09-05 22:45:47.806 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 2496 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 22:45:47.840 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 22:45:48.101 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 22:45:48.101 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 22:45:52.162 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 22:45:52.363 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153ms. Found 2 repository interfaces.
+2019-09-05 22:45:53.246 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bb0f75f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 22:45:54.262 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 22:45:54.313 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:45:54.356 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 22:45:54.357 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 22:45:54.539 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 22:45:54.540 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6439 ms
+2019-09-05 22:45:55.024 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 22:45:56.159 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 22:45:56.315 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.040s)
+2019-09-05 22:45:56.331 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 22:45:56.332 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 22:45:56.527 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 22:45:56.551 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 22:45:56.758 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 22:45:57.070 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 22:45:57.072 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 22:45:57.526 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 22:45:58.126 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 22:45:59.801 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 22:45:59.853 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 22:46:00.923 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-05 22:46:00.923 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-05 22:46:00.923 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-05 22:46:00.923 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-05 22:46:00.970 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7468e78b, org.springframework.security.web.context.SecurityContextPersistenceFilter@28259d64, org.springframework.security.web.header.HeaderWriterFilter@42920c8f, org.springframework.security.web.authentication.logout.LogoutFilter@5dfa7051, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d5c8aa2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ce0cf45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42edcefa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d387a3e, org.springframework.security.web.session.SessionManagementFilter@6b6b9253, org.springframework.security.web.access.ExceptionTranslationFilter@12bdede0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@762f8ba3]
+2019-09-05 22:46:01.227 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 22:46:01.290 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 22:46:02.056 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-05 22:46:02.121 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-05 22:46:02.124 INFO  am.example.task.TaskApplication - Started TaskApplication in 15.785 seconds (JVM running for 29.974)
+2019-09-05 22:46:13.327 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 22:46:13.327 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 22:46:13.345 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2019-09-05 22:46:52.867 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-05 22:46:53.161 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1364, SQLState: HY000
+2019-09-05 22:46:53.161 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'name' doesn't have a default value
+2019-09-05 22:46:53.191 ERROR a.e.t.c.e.ExceptionHandler - Global Error : could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+2019-09-05 22:46:53.192 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement]
+2019-09-05 23:29:00.219 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 5568 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 23:29:00.239 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 23:29:00.614 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 23:29:00.615 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 23:29:04.087 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 23:29:04.266 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121ms. Found 2 repository interfaces.
+2019-09-05 23:29:05.071 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96809ebe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 23:29:05.822 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 23:29:05.886 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 23:29:05.902 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 23:29:05.903 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 23:29:06.108 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 23:29:06.108 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5493 ms
+2019-09-05 23:29:06.428 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 23:29:07.298 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 23:29:07.431 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.044s)
+2019-09-05 23:29:07.468 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: `task_test`.`flyway_schema_history`
+2019-09-05 23:29:08.743 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: << Empty Schema >>
+2019-09-05 23:29:08.747 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 1 - Init db
+2019-09-05 23:29:13.031 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `task_test` to version 2 - Create table
+2019-09-05 23:29:13.170 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `task_test` (execution time 00:05.705s)
+2019-09-05 23:29:14.535 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 23:29:14.614 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 23:29:16.108 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 23:29:16.612 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 23:29:16.613 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 23:29:17.654 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 23:29:18.142 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 23:29:19.889 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 23:29:19.962 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 23:29:21.074 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-05 23:29:21.074 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-05 23:29:21.074 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-05 23:29:21.074 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-05 23:29:21.120 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@650b2291, org.springframework.security.web.context.SecurityContextPersistenceFilter@35763b85, org.springframework.security.web.header.HeaderWriterFilter@5b3faff9, org.springframework.security.web.authentication.logout.LogoutFilter@3d4c6034, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9718727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39e01f77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d69f913, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60c6d9a8, org.springframework.security.web.session.SessionManagementFilter@1bb9075b, org.springframework.security.web.access.ExceptionTranslationFilter@75ccf5ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68b47c4]
+2019-09-05 23:29:21.516 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 23:29:22.537 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 23:29:25.819 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-05 23:29:25.922 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-05 23:29:25.926 INFO  am.example.task.TaskApplication - Started TaskApplication in 29.131 seconds (JVM running for 40.896)
+2019-09-05 23:29:38.686 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 23:29:38.689 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 23:29:38.712 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2019-09-05 23:30:40.351 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-05 23:48:16.003 INFO  am.example.task.TaskApplication - Starting TaskApplication on Roman with PID 4700 (started by Roman Petrosyan in C:\Users\Roman Petrosyan\IdeaProjects\task)
+2019-09-05 23:48:16.035 INFO  am.example.task.TaskApplication - No active profile set, falling back to default profiles: default
+2019-09-05 23:48:16.277 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-05 23:48:16.278 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-05 23:48:22.417 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-05 23:48:22.721 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 228ms. Found 2 repository interfaces.
+2019-09-05 23:48:24.550 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53c3b9d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-05 23:48:27.029 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 23:48:27.195 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 23:48:27.324 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 23:48:27.325 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-05 23:48:27.945 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 23:48:27.946 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11667 ms
+2019-09-05 23:48:28.666 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-05 23:48:30.391 INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:mysql://localhost:3306/mysql (MySQL 8.0)
+2019-09-05 23:48:30.736 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.071s)
+2019-09-05 23:48:30.754 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `task_test`: 2
+2019-09-05 23:48:30.755 INFO  o.f.core.internal.command.DbMigrate - Schema `task_test` is up to date. No migration necessary.
+2019-09-05 23:48:31.623 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-09-05 23:48:31.823 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-09-05 23:48:32.672 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-05 23:48:34.302 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-05 23:48:34.307 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-09-05 23:48:39.162 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-05 23:48:42.003 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-05 23:49:02.790 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-05 23:49:03.180 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-09-05 23:49:10.613 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-05 23:49:10.613 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/static/**'], []
+2019-09-05 23:49:10.614 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-05 23:49:10.614 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-05 23:49:10.808 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d3e10cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@e7cfb4f, org.springframework.security.web.header.HeaderWriterFilter@7023d49f, org.springframework.security.web.authentication.logout.LogoutFilter@40daafce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a72b572, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d163e7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17a75173, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1208f33d, org.springframework.security.web.session.SessionManagementFilter@39bab692, org.springframework.security.web.access.ExceptionTranslationFilter@3ece842a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@702eb05d]
+2019-09-05 23:49:13.822 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 23:49:14.298 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-05 23:49:36.561 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-05 23:49:38.818 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-05 23:49:39.111 INFO  am.example.task.TaskApplication - Started TaskApplication in 84.558 seconds (JVM running for 96.65)
+2019-09-05 23:50:59.046 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 23:50:59.046 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 23:50:59.162 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 115 ms
+2019-09-05 23:51:52.524 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
